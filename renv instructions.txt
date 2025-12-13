@@ -1,0 +1,8 @@
+renv::install("nuovo_pacchetto")
+renv::snapshot()     # update renv.lock
+git add renv.lock    
+git commit -m "..."
+git push
+
+git pull
+renv::restore()
